@@ -28,7 +28,7 @@ module.exports = {
   },
   entry: {
         login: "./src/Login/LoginView.js",
-
+        app:"./src/HomeView.js"
     },
     output: {
         path: path.join(__dirname, "dist"),

@@ -1,0 +1,13 @@
+.wp_left_panel_cls
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.wp_left_panel_cls li
+{
+    margin: 10px;
+    cursor: pointer;
+}

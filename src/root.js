@@ -17,7 +17,7 @@
     location.href = "./home.html";
   }
   else {
-    location.href = "./login.html";
+    location.href = "./home.html";
   }
 
 })();
