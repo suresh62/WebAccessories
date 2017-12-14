@@ -13,7 +13,7 @@
  import HomeHeaderView from './HomeHeader/HomeHeaderView';
  import LeftPanelView from './LeftPanel/LeftPanelView';
  import RightPanelView from './RightPanel/RightPanelView';
- import { BrowserRouter as Router,Switch, Route,Link } from 'react-router-dom';
+ import { BrowserRouter as Router,Switch, Route,Link, HashRouter } from 'react-router-dom';
  import PopupView from './WebComponents/Popup/PopupView';
  
  
@@ -28,11 +28,11 @@
         return(
                 <div id="wa-container">
                   
-
+                           {console.log(this.props,<HomeView/>)}
                         <HomeHeaderView></HomeHeaderView>
                         <div id="wa-panel-container">
                           <LeftPanelView></LeftPanelView>
-                          <RightPanelView><Route path="/" component={PopupView}/></RightPanelView>
+                          <RightPanelView></RightPanelView>
                         </div>
                      
                     
@@ -47,5 +47,5 @@
 
  
 
- ReactDOM.render(<Router><HomeView /></Router>, document.getElementById('mainContent'));
+ ReactDOM.render(<Router  history={history}><HomeView><div id="tes"></div></HomeView></Router>, document.getElementById('mainContent'));
  

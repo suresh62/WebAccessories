@@ -31,7 +31,7 @@ module.exports = {
         app:"./src/HomeView.js"
     },
     output: {
-        path: path.join(__dirname, "dist"),
+        path: path.join(__dirname, "Public/dist"),
         filename: "[name].entry.js"
     }
 

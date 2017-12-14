@@ -23,6 +23,9 @@
 
  import React from 'react';
  import PopupView from '../WebComponents/Popup/PopupView';
+ import AlertView from '../WebComponents/Alert/AlertView';
+ 
+ import { BrowserRouter as Router,Switch, Route,Link } from 'react-router-dom';
  
 
  class RightPanelView extends React.Component{
@@ -34,8 +37,14 @@
 
     render(){
         return(
-              
-                        <div> Rigtht Panel</div>
+              <div>
+                   
+                       <div>
+                        <Route path="/app/popup/:a/n" component={PopupView}/>
+                        <Route  path="/../alert" component={AlertView}/>
+                      </div>
+             </div>
+            
                         
         )
     }

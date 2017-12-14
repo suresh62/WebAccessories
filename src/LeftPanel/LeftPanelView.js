@@ -14,26 +14,24 @@
 
  import React from 'react';
  import style from './style.css';
- import {BrowserRouter as Router,Link} from 'react-router-dom';
+ import {BrowserRouter as Router,Link,NavLink} from 'react-router-dom';
 
 
  class LeftPanelView extends React.Component{
 
     constructor(){
         super();
-        this.state = { menus:["PopUps","Alert","Messages"]};
+        this.state = { menus:[{name:"PopUps",route:"popup"},{name:"Alerts",route:"alert"},{name:"Messages",route:"message"}]};
     }
 
     render(){
         return(
-            <Router>
                     <div id="wa-left-panel">
                         <ul id="wa-left-panel-menu" className={style.wp_left_panel_cls}>
-                            {this.state.menus.map((name,key) => <li><Link to="/popup">{name}</Link></li> )}
+                            {this.state.menus.map((val,key) => <li><NavLink to={"/"+val.route+"/5/n"}>{val.name}</NavLink></li> )}
                         </ul>
                      </div>
             
-            </Router>
             
         )
     }
