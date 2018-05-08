@@ -8,19 +8,27 @@
  */
 
 import React from 'react';
+import PopupPreview from './PopupPreview';
+import PopupConfigView from './PopupConfigView';
 
 
 class PopupView extends React.Component{
 
         constructor(){
             super();
-            console.log(this);
+            
         }
 
         render(){
             return(
 
-                    <h1>{console.log(this)}Popup</h1>
+                    <div className="wa_left_panel_innercontainer">
+                            <p>Configure Your Popup</p>
+                            <div style={{float:'left','width':'30%'}}><PopupConfigView/></div>
+                            <div style={{float:'left','width':'70%'}}>><PopupPreview/></div>
+                            
+                    </div>
+                   
             )
         }
 

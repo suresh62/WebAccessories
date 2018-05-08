@@ -28,7 +28,7 @@
         return(
                     <div id="wa-left-panel">
                         <ul id="wa-left-panel-menu" className={style.wp_left_panel_cls}>
-                            {this.state.menus.map((val,key) => <li><NavLink to={"/"+val.route+"/5/n"}>{val.name}</NavLink></li> )}
+                            {this.state.menus.map((val,key) => <li><NavLink to={"/"+val.route}>{val.name}</NavLink></li> )}
                         </ul>
                      </div>
             

@@ -28,7 +28,7 @@
         return(
                 <div id="wa-container">
                   
-                           {console.log(this.props,<HomeView/>)}
+                        {console.log(this,<HomeView/>)}
                         <HomeHeaderView></HomeHeaderView>
                         <div id="wa-panel-container">
                           <LeftPanelView></LeftPanelView>
@@ -47,5 +47,5 @@
 
  
 
- ReactDOM.render(<Router  history={history}><HomeView><div id="tes"></div></HomeView></Router>, document.getElementById('mainContent'));
+ ReactDOM.render(<HashRouter><HomeView  id="5"><div ji="9"></div></HomeView></HashRouter>, document.getElementById('mainContent'));
  

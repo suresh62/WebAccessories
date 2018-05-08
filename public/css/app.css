@@ -23,6 +23,10 @@ html, body {
     height: calc(100% - 50px);
 }
 
+.wa_left_panel_innercontainer
+{
+    margin: 10px;
+}
 
 #wa-left-panel,#wa-right-panel
 {

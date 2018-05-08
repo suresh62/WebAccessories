@@ -1,0 +1,13 @@
+
+
+1. A user does some html actions like click,select etc.We trigger action for that event.
+2. We call a Action function from that event.We pass necessary values like user select value,or any data attributes.
+3. In Action the called function dispatches an event.It also passes the value along with the dispatch params.
+4. Now every component which has subscribered to the dispatched event will get triggered.
+5. In the function we can call the render function of the react to update the view.We can use forceUpdate also.
+6. In render function we will the store function to get the latest values.
+
+We can update the store values also the function which we call when trigger happens.
+
+component (htm actions click,select,pass value along) => call action function => action function dispatches the event => 
+all the registered function are called(we can update store,update view etc)
